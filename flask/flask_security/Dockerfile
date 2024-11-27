@@ -6,6 +6,8 @@ WORKDIR /flask_security
 # Copy the necessary files and directories into the container
 COPY requirements.txt requirements.txt
 COPY main/ main/
+COPY config/ config/
+COPY models/ models/
 
 # Upgrade pip and install Python dependencies
 RUN apk add gcc musl-dev libffi-dev && \
